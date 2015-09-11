@@ -1,20 +1,28 @@
-\documentclass{article}
+\documentclass[hidelinks, 12pt]{article}
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+\usepackage{graphicx}
 \input{preamble.tex}
 \begin{document}
 	\title{Samarbejdsaftale}
 	\author{Gruppe B2-18}
 	\maketitle
-	Gruppen har i fællesskab opstillet følgende krav til udformning og udførelse af arbejdet til P0 projektet.
+	Gruppen har i fællesskab opstillet følgende krav til udformning og udførelse af arbejdet til P0 projektet. Dette har resulteret i den følgende samarbejdsaftale.
 	
 	\begin{itemize}
-		\item Vi overholder tidsplaner som bliver besluttet i fællesskab
-		\item Vi overholder aftaler som bliver besluttet i gruppen
+		\item Vi overholder tidsplaner som bliver besluttet i fællesskab\footnote{\label{note1}Hvis ikke aftalerne overholdes, skal der enten medbringes kage (eller andet bagværk [\textbf{skal være spiseklart!}]). Hvis ikke dette gøres, skal der betales 40 kroner i en bødekasse}
+		\item Vi overholder aftaler som bliver besluttet i gruppen\footnoteref{note1}
+		\item Vi skal hver især sørge for at komme til forelæsningerne
+		\begin{itemize}
+			\item Hvis dette ikke er muligt, for eksempel hvis man er syg, er man selv forpligtet til at læse op på stoffet, så man stadig kan indgå i diskussioner i gruppen. 
+		\end{itemize}
 		\item Vi sørger for at alt viden som bliver indsamlet, skal være delt mellem alle gruppemedlemmer
 		\item Når vi mødes, sørger hver person videregive information som er blevet indhentet uden for grupperummet
 		\item Vi sørger for at notere aftaler der besluttes på møder i gruppen
-		\item Når et afsnit er skrevet, gives dette videre til et gruppemedlem, som vil kigge det igennem og rette det inden det sendes til vejlederen
-		\item Vi vil hver især sørge for at læse hinandens afsnit, og give feedback på disse
-		\item Vi vil sørge for at notere alle kilder vi bruger, fra starten af projektet
+		\item Når et afsnit er skrevet, gives dette videre til et gruppemedlem, som vil kigge det igennem og rette det inden det sendes til vejlederen\footnoteref{note1}
+		\item Vi vil hver især sørge for at læse hinandens afsnit, og give feedback på disse\footnoteref{note1}
+		\item Vi vil sørge for at notere alle kilder vi bruger, fra starten af projektet\footnoteref{note1}
 	\end{itemize}
 
 	Vi har i gruppen også opstillet krav til samarbejdet med vejlederen
@@ -24,6 +32,25 @@
 		\item Vi vil udarbejde en dagsorden, og sende disse til vejlederen inden møder.
 	\end{itemize}
 
-	I perioden vil vi gerne lære at arbejde med PBL-metoden, og dermed bruge den viden vi har opnået fra kurser og informationer om denne. Desuden vil vi bruge dette projekt til at stifte bekendtskab med udformningen af en rapport på AAU.
+	Hvis reglerne brydes gentagende gange, tages problemet først op med vejlederen. Hvis ikke der findes en løsning på problemet, og personen bliver ved med at bryde reglerne, bliver personen bedt om at forlade gruppen, og vil ellers blive smidt ud af gruppen, da ingen er interesseret i at andre medlemmer i gruppen blot hægter sig på uden at lave arbejdet.
+
+	Ved at underskrive på denne side, accepterer jeg at følge samarbejdsaftalens regler, og konsekvenserne, hvis ikke de overholdes.
+	
+\begin{table}[b]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll}
+\cline{1-1} \cline{3-3}
+Søren Alexander Flensborg &  & Shano Søndergaard Andersen \\
+                          &  &                            \\ \cline{1-1} \cline{3-3} 
+Mathias Steen Jakobsen    &  & Jacob Askløf Svenningsen   \\
+                          &  &                            \\ \cline{1-1} \cline{3-3} 
+Mikkel Vestergaard Hem    &  & Hejan Shoresh              \\
+                          &  &                            \\ \cline{1-1}
+Frederik Lund Kær         &  &                           
+\end{tabular}
+}
+\end{table}
 
 \end{document}
