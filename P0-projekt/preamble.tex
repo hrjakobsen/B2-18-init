@@ -1,9 +1,18 @@
 \usepackage{graphicx,hyperref,amsmath,natbib,bm,url}
+\def\UrlBreaks{\do\/\do-}
 \usepackage{microtype,todonotes}
 \usepackage[a4paper,text={14.5cm,23.2cm},centering]{geometry}
 \usepackage[compact,small]{titlesec}
 \usepackage[utf8]{inputenc}
 \usepackage[nottoc,numbib]{tocbibind}
+\usepackage[labelfont=bf]{caption}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    \textbf{Kilde:} #2%
+  }%
+}
 
 \clubpenalty = 10000
 \widowpenalty = 10000
