@@ -8,6 +8,10 @@
 \usepackage[labelfont=bf]{caption}
 \usepackage{tikz}
 \usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
 \usetikzlibrary{arrows}
 \newcommand*{\captionsource}[2]{%
   \caption[{#1}]{%
@@ -64,7 +68,7 @@
 \makeatother
 
 
-\newcommand*{\titleGM}{\begingroup % Create the command for including the title page in the document
+\newcommand*{\titleGM}{\thispagestyle{empty}\begingroup % Create the command for including the title page in the document
 \hbox{ % Horizontal box
 \hspace*{0.2\textwidth} % Whitespace to the left of the title page
 \rule{1pt}{\textheight} % Vertical line
@@ -73,9 +77,10 @@
 
 {\noindent\Huge\bfseries Selvkørende biler}\\[2\baselineskip] % Title
 {\large \textit{P0-projekt}}\\[4\baselineskip] % Tagline or further description
-{\Large \textsc{\\\\\noindent B2-18}} % Author name
+{\Large \textsc{\\\\\noindent Gruppe B2-18}} % Author name
 
 \vspace{0.5\textheight} % Whitespace between the title block and the publisher
 {\noindent Mathias Jakobsen\\Jacob Svenningsen\\Søren Flensborg\\Frederik Kær\\Shano Andersen\\Mikkel Hem}\\[\baselineskip] % Publisher and logo
 }}
 \endgroup}
+\renewcommand\bibname{Kildeliste}
