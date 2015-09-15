@@ -1,0 +1,94 @@
+% Dette er LaTeX-versionen af titelbladet for tek-nat-basis-rapporter 2004 efterår
+% Filen kr¾ver:
+% Universitetets logo:  aau-logo.png (for LaTeX) eller aau-logo.ps (for LaTeX)
+% Synopsis: En fil ved navn synopsis.tex
+
+% Udarbejdet af: Hans HŸttel (hans@cs.auc.dk) 21. maj 2003
+% Rettet af Morten Christophersen (mortench@tnb.aau.dk) 30. nov 2004(ændret til nyt design 2004 efterår)
+\documentclass[11pt]{article}
+\ifx\pdfoutput\undefined 
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx} 
+\usepackage{type1cm} \fi
+    \usepackage[utf8]{inputenc}
+    \usepackage{a4}
+    \usepackage{lastpage}
+
+\begin{document} 
+\thispagestyle{empty}
+
+\newlength{\realparindent}
+\newlength{\realparskip}
+\setlength{\realparindent}{\parindent}
+\setlength{\realparskip}{\parskip}
+
+\begin{titlepage}
+\begin{nopagebreak}
+{
+\begin{center}
+    \samepage
+    \begin{tabular*}{\textwidth}{@{} l @{\extracolsep{\fill}}r@{}}
+        \parbox[b]{11cm}{
+            {\LARGE Aalborg Universitet}
+            
+            {\large Det Ingeniør-, Natur- og Sundhedsvidenskabelige Basisår}
+        }
+        & \includegraphics[width=2cm]{images/aaulogo.png} \\
+        \hline
+    \end{tabular*}
+    \vspace{0.4cm}
+
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \multicolumn{2}{@{}l@{}}{
+            \begin{minipage}[t]{1.0\textwidth}
+                \begin{description}
+                    \item[Titel:]~\\
+                    Projektets titel
+                    \vspace{0.4cm}
+                \end{description}
+            \end{minipage}
+        }\\
+        \begin{minipage}[t]{0.49\textwidth}
+            \begin{description}
+                \item[Projektperiode:]~\\
+                P1, ?? oktober - ?? december 2009
+                \vspace{0.2cm}
+
+                \item[Projektgruppe:]~\\
+                Gruppen
+                  
+                \item[Gruppemedlemmer:]~\\
+                Medlem 1 
+
+                Medlem 2
+
+                Medlem 3
+                \vspace{0.2cm}
+                \item[Vejleder:]~\\
+                En eller anden
+                \vspace{0.2cm}
+                \item[Antal kopier:] ?
+                \item[Antal sider:] \pageref{LastPage}
+            \end{description}
+        \end{minipage}
+        &
+        \fbox{
+            \begin{minipage}[t]{0.45\textwidth}
+                \textbf{Synopsis:}\\
+                % Der skal være normale afsnits-indryk,
+                % selv om teksten står i en minipage:
+                \setlength{\parindent}{\realparindent}
+                \setlength{\parskip}{\realparskip}
+                {\small 
+                    \input{synopsis}
+                }
+            \end{minipage}
+        }
+        \\
+    \end{tabular*}
+\end{center}
+}
+\end{nopagebreak}
+\end{titlepage}
+\end{document}
