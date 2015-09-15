@@ -1,9 +1,83 @@
-\documentclass[12pt,hidelinks]{article}
+\documentclass[11pt,hidelinks]{article}
+\ifx\pdfoutput\undefined 
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx} 
+\usepackage{type1cm} \fi
+\usepackage{lastpage}
 \input{preamble.tex}
+\usepackage[ddmmyyyy]{datetime}
 \setcounter{secnumdepth}{4}
+
 \begin{document}
+
+\thispagestyle{empty}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{nopagebreak}
+{\samepage 
+\begin{tabular}{r}
+\parbox{\textwidth}{  \raisebox{11mm}{\includegraphics[height=2.2cm]{images/aaulogo.png}}
+\hfill \parbox{4.9cm}{\begin{tabular}{l}
+{\sf\small \textbf{Det Teknisk-Naturvidenskabelige Basis{\aa}r }}\\
+{\sf\small  \textbf{Datalogi}} \\
+{\sf\small Strandvejen 12-14} \\
+{\sf\small Telefon 96 35 97 31} \\
+{\sf\small Fax 98 13 63 93} \\
+{\sf\small http://tnb.aau.dk}
+\end{tabular}}}
+\\
+\end{tabular}
+
+\begin{tabular}{cc}
+\parbox{7cm}{
+\begin{description}
+
+\item {\bf Titel: \\En selvkørende fremtid} 
+  
+\item {\bf Tema: \\Selvkørende biler} 
+
+\end{description}
+
+\parbox{8cm}{
+
+\begin{description}
+\item {\bf Projektperiode: \\P0}
+	\\
+  \hspace{3cm}
+\item {\bf Gruppe: \\B2-18}
+\\
+  \hspace{3cm}
+\item {\bf Deltagere: \\ Frederik Kær\\Jacob Svenningsen\\ Mathias Jakobsen\\Mikkel Hem\\  Shano Andersen \\Søren Flensborg}\\
+  \hspace{2cm}
+\item {\bf Vejledere: \\Anders Mariegaard}\\
+\end{description}
+}
+\begin{description}
+\item {\bf Antal sider: \\\pageref{LastPage}} 
+%\item {\bf Bilagsantal og --art:} ??
+\item {\bf Afsluttet Den \today} 
+\end{description}
+\vfill } &
+\parbox{7cm}{
+  \vspace{.15cm}
+  \hfill 
+  \begin{tabular}{l}
+  {\bf Synopsis:}\bigskip \\
+  \fbox{
+    \parbox{6.5cm}{\bigskip
+     {\vfill{\small \input{synopsis.tex}
+     \bigskip}}
+     }}
+   \end{tabular}}
+\end{tabular}}
+\\ \\
+\noindent{\footnotesize\emph{Rapportens indhold er frit tilgængeligt, men offentliggørelse (med kildeangivelse) må kun ske efter aftale med forfatterne.}}
+\end{nopagebreak}
+\end{titlepage}
+
     \sloppy
-    \titleGM
 	\newpage
 	\tableofcontents
 	\newpage
@@ -26,11 +100,9 @@
 	\section{Problemafgrænsning}
 	\textit{I dette afsnit vil vi indsnævre vores problemrum fra problemanalysen, og finde frem til fokusområdet for vores problemformulering, og for en eventuel løsning af et af problemerne vi har fundet i problemanalysen. Ud fra denne problemafgrænsning, vil vi så opstille en problemformulering.}.
     \input{problemafgraensning/indledning.tex}	
-    \input{problemafgraensning/typesOfMachineLearning.tex}
-    \input{problemafgraensning/svm.tex}
-    \input{problemafgraensning/deeplearning.tex}
     \section{Problemformulering}
     \input{problemafgraensning/problemformulering.tex}
 	\bibliographystyle{plain}
 	\bibliography{sources}
+
 \end{document}

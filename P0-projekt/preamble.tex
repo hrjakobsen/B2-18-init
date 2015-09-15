@@ -1,8 +1,8 @@
 \usepackage{graphicx,hyperref,amsmath,natbib,bm,url}
 \def\UrlBreaks{\do\/\do-}
 \usepackage{microtype,todonotes}
-\usepackage[a4paper,text={14.5cm,23.2cm},centering]{geometry}
 \usepackage[compact,small]{titlesec}
+\usepackage[a4paper,text={14.5cm,23.2cm},centering]{geometry\}
 \usepackage[utf8]{inputenc}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage[labelfont=bf]{caption}
@@ -12,6 +12,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{placeins}
+\usepackage{wrapfig}
 \usetikzlibrary{arrows}
 \newcommand*{\captionsource}[2]{%
   \caption[{#1}]{%
@@ -67,20 +68,4 @@
 \@addtoreset{paragraph}{subsubsubsection}
 \makeatother
 
-
-\newcommand*{\titleGM}{\thispagestyle{empty}\begingroup % Create the command for including the title page in the document
-\hbox{ % Horizontal box
-\hspace*{0.2\textwidth} % Whitespace to the left of the title page
-\rule{1pt}{\textheight} % Vertical line
-\hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
-\parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
-
-{\noindent\Huge\bfseries Selvkørende biler}\\[2\baselineskip] % Title
-{\large \textit{P0-projekt}}\\[4\baselineskip] % Tagline or further description
-{\Large \textsc{\\\\\noindent Gruppe B2-18}} % Author name
-
-\vspace{0.5\textheight} % Whitespace between the title block and the publisher
-{\noindent Mathias Jakobsen\\Jacob Svenningsen\\Søren Flensborg\\Frederik Kær\\Shano Andersen\\Mikkel Hem}\\[\baselineskip] % Publisher and logo
-}}
-\endgroup}
 \renewcommand\bibname{Kildeliste}
