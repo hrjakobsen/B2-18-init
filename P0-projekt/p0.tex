@@ -1,9 +1,10 @@
-\documentclass[11pt,hidelinks]{article}
+\documentclass[12pt,hidelinks]{article}
 \ifx\pdfoutput\undefined 
 \usepackage[dvips]{graphicx}
 \else
 \usepackage[pdftex]{graphicx} 
 \usepackage{type1cm} \fi
+    \usepackage{a4}
 \usepackage{lastpage}
 \input{preamble.tex}
 \usepackage[ddmmyyyy]{datetime}
@@ -16,9 +17,9 @@
 \begin{titlepage}
 \thispagestyle{empty}
 \begin{nopagebreak}
-{\samepage 
-\begin{tabular}{r}
-\parbox{\textwidth}{  \raisebox{11mm}{\includegraphics[height=2.2cm]{images/aaulogo.png}}
+{\small\samepage 
+\hfill\begin{tabular}{r}
+\parbox{5cm}{  \raisebox{11mm}{\includegraphics[height=2.2cm]{images/aaulogo.png}}
 \hfill \parbox{4.9cm}{\begin{tabular}{l}
 {\sf\small \textbf{Det Teknisk-Naturvidenskabelige Basis{\aa}r }}\\
 {\sf\small  \textbf{Datalogi}} \\
@@ -84,7 +85,7 @@
 	\section{Indledning}
 	\input{problemanalyse/motivation.tex}
 	\section{Problemanalyse}
-	\textit{I dette afsnit vil vi undersøge hvilke problemer der står i vejen for at biler bliver godkendt til at køre på vejene. Vi har inddelt vores problemanalyse i to hovedpunkter, de teknologiske- og de samfundsmæssige udfordringer. På denne måde vil vi forsøge at få et overblik over problemet, og lokalisere de steder, hvor man kunne forbedre systemet så bilerne kan blive godkendt.}
+	{I dette afsnit vil vi undersøge hvilke problemer der står i vejen for at biler bliver godkendt til at køre på vejene. Vi har inddelt vores problemanalyse i to hovedpunkter, de teknologiske- og de samfundsmæssige udfordringer. På denne måde vil vi forsøge at få et overblik over problemet, og lokalisere de steder, hvor man kunne forbedre systemet så bilerne kan blive godkendt.}
 	\subsection{Begrebsforklaringer}
 	\input{problemanalyse/beskrivelse.tex}
 	\subsection{Teknologiske problemstillinger}

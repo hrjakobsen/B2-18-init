@@ -126,4 +126,4 @@ sympy-plots-for-*.tex/
 *.bak
 *.sav
 
-Thumbs.db
+thumbs.db
