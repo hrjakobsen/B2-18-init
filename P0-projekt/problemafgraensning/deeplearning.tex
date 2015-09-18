@@ -1,7 +1,7 @@
 \subsubsection{Neurale netværk}
 Inden for machine learning findes et område kaldet deep learning. Deep learning går ud på at træne en algoritme til at træffe beslutninger, ud fra nogle såkaldte neurale netværk. Disse neurale netværk tager et eller flere inputs, og giver et output ud fra disse. 
 
-Først vil vi kigge på den simpleste form for neuron i et neuralt netværk --- en perceptron\cite{neural}.
+Først vil vi kigge på den simpleste form for neuron i et neuralt netværk --- en perceptron \cite{neural}.
 \FloatBarrier
 \begin{figure}[h!]
     \centering
@@ -26,7 +26,7 @@ Først vil vi kigge på den simpleste form for neuron i et neuralt netværk --- 
 En perceptron har \'et eller flere inputs, der alle kan være 0 eller 1. Vi tager udgangspunkt i figur \ref{fig:perceptron}, med 3 inputs. Alt efter de tre inputs til denne perceptron, vil outputtet enten være 0 eller 1. Vi indfører nu begrebet vægtning til netværket. Vægtningen består i at de forskellige inputs $x$ vægtes med et reelt tal $w$, og dermed betyder mere eller mindre end de andre inputs. Outputtet af perceptronen vil være $1$ hvis summen af alle vægte ganget med værdien af inputtet, er højere end en forudbestemt værdi.
 
 
-Perceptroner giver enten outputtet 1 eller 0. Dette betyder at nogle små ændringer i inputtet eller vægtningen, kan betyde at outputtet går fra 0 til 1. For at undgå dette, bruger man en anden neuron, kaldet en sigmoid neuron. På samme måde som perceptronen, giver sigmoid også et output på baggrund af inputtet, men inputtet kan være et tal mellem 0 og 1, og outputtet vil også være et tal mellem 0 og 1. Outputtet af sigmoid neuronerne er givet ved sigmoid funktionen\cite{neural}.
+Perceptroner giver enten outputtet 1 eller 0. Dette betyder at nogle små ændringer i inputtet eller vægtningen, kan betyde at outputtet går fra 0 til 1. For at undgå dette, bruger man en anden neuron, kaldet en sigmoid neuron. På samme måde som perceptronen, giver sigmoid også et output på baggrund af inputtet, men inputtet kan være et tal mellem 0 og 1, og outputtet vil også være et tal mellem 0 og 1. Outputtet af sigmoid neuronerne er givet ved sigmoid funktionen \cite{neural}.
 
 \begin{equation}
 	\sigma(z)=\frac{1}{1+e^{-z}}
@@ -51,4 +51,4 @@ Måden netværket trænes på er ved at opstille en \textit{cost-function}, som 
 
 
 
-Dagens og fremtidens selvkørende biler, benytter sig både af deep-learning teknikken samt semi-supervised learning\cite{Musk}. Både Tesla og Audi benytter sig af Nvidia Drive PX, hvilket er en udviklingsplatform, som tillader bilen det er installeret i, at tilgå Nvidias nye deep-learning platform kaldet DIGITS. Dette gør det muligt for enheder, at lære deres omgivelser at kende, og er designet til at fungere ligesom et menneske. Ligesom mennesker lærer med tiden og af deres erfaringer, vil bilerne også lære af deres erfaringer, men da de alle er koblet til dette netværk, lærer alle bilerne, af alle bilers erfaringer\cite{Nvidia}. Dette board uploader sine data til DIGITS, og hvis der er noget indsamlet data den ikke er sikker på hvad den skal gøre med, vil dette data blive kigget og regnet på af hele netværket.
+Dagens og fremtidens selvkørende biler, benytter sig både af deep-learning teknikken samt semi-supervised learning \cite{Musk}. Både Tesla og Audi benytter sig af Nvidia Drive PX, hvilket er en udviklingsplatform, som tillader bilen det er installeret i, at tilgå Nvidias nye deep-learning platform kaldet DIGITS. Dette gør det muligt for enheder, at lære deres omgivelser at kende, og er designet til at fungere ligesom et menneske. Ligesom mennesker lærer med tiden og af deres erfaringer, vil bilerne også lære af deres erfaringer, men da de alle er koblet til dette netværk, lærer alle bilerne, af alle bilers erfaringer \cite{Nvidia}. Dette board uploader sine data til DIGITS, og hvis der er noget indsamlet data den ikke er sikker på hvad den skal gøre med, vil dette data blive kigget og regnet på af hele netværket.
