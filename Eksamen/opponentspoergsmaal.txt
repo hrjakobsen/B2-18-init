@@ -1,0 +1,19 @@
+Spørgsmål:
+
+Side 8 - NemID har mange sikkerhedshuller? Vil det sige at jeg ikke kan logge ind på min bank?
+
+Side 11 (kilde 21) - Hvad blev de 400 millioner kroner brugt på?
+
+Side 11 - De 400 millioner var prisen på systemt
+
+Side 13 - Hvorfor kan 500k linjers kode ikke tjekkes igennem, når linuxkernens 19 millioner linjer kan?
+
+Side 14 - Hvad betyder CGI?
+
+Side 14 - Hvad er angrebsvektorer?
+
+Side 15 - 3 kommandoer som kan køres direkte fra nettet? Vil dette være helt skjult, og er 3 kommandoer alt hvad der skal til?
+
+Side 16 - hvorfor lige 12 ISP'er der skal styres? Der er kun 23-28 internetudbydere i Danmark?
+
+Side 17 - hvorfor ingen problemformulering
